@@ -1,9 +1,9 @@
 {
-  "name": "dom1no/l5scaffold",
+  "name": "kontora-scaffold",
   "description": "Extend Laravel 5's generators scaffold.",
   "keywords": ["laravel", "generators", "scaffold" , "laravel5"],
   "license": "MIT",
-  "minimum-stability": "dev",
+  "minimum-stability": "dev-master",
   "authors": [
     {
       "name": "Fernando Brito",
