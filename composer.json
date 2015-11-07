@@ -1,5 +1,5 @@
 {
-  "name": "kontora-scaffold",
+  "name": "dom1no/l5scaffold",
   "description": "Extend Laravel 5's generators scaffold.",
   "keywords": ["laravel", "generators", "scaffold" , "laravel5"],
   "license": "MIT",
@@ -16,7 +16,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Dom1no\\L5scaffold\\": "src/"
+      "dom1no\\l5scaffold\\": "src/"
     }
   }
 }
