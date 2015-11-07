@@ -3,7 +3,6 @@
   "description": "Extend Laravel 5's generators scaffold.",
   "keywords": ["laravel", "generators", "scaffold" , "laravel5"],
   "license": "MIT",
-  "minimum-stability": "dev",
   "authors": [
     {
       "name": "Fernando Brito",
@@ -16,7 +15,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Laralib\\L5scaffold\\": "src/"
+      "DOm1no\\L5scaffold\\": "src/"
     }
   }
 }
