@@ -1,22 +1,16 @@
 {
-  "name": "dom1no/l5scaffold",
+  "name": "dom1no/scaffold",
   "description": "Extend Laravel 5's generators scaffold.",
   "keywords": ["laravel", "generators", "scaffold" , "laravel5"],
   "license": "MIT",
   "minimum-stability": "dev",
-  "authors": [
-    {
-      "name": "Fernando Brito",
-      "email": "fernandobritofl@gmail.com"
-    }
-  ],
   "require": {
     "php": ">=5.4.0",
     "illuminate/support": "~5.0"
   },
   "autoload": {
     "psr-4": {
-      "dom1no\\l5scaffold\\": "src/"
+      "Dom1no\\Scaffold\\": "src/"
     }
   }
 }
