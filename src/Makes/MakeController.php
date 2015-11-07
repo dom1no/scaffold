@@ -59,7 +59,7 @@ class MakeController
      */
     protected function compileControllerStub()
     {
-        $stub = $this->files->get(__DIR__ . '/../stubs/controller.stub');
+        $stub = $this->files->get(config('scaffold.stubPath') . 'controller.stub');
 
         $this->replaceClassName($stub, "controller")
             ->replaceModelPath($stub)
@@ -96,7 +96,9 @@ class MakeController
     private function replaceModelPath(&$stub)
     {
 
-        $model_name = $this->getAppNamespace() . $this->scaffoldCommandObj->getObjName('Name');
+        $model_name = $this->getAppNamespace() . 
+        str_replace('/', '\\', config('scaffold.models_command_path')) . 
+        $this->scaffoldCommandObj->getObjName('Name');
         $stub = str_replace('{{model_path}}', $model_name, $stub);
 
         return $this;

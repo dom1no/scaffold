@@ -32,7 +32,7 @@ class MakeModel {
 
         if (! $this->files->exists($modelPath)) {
             $this->scaffoldCommandObj->call('make:model', [
-                'name' => $name
+                'name' => config('scaffold.models_command_path') . $name
             ]);
         }
 

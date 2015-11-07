@@ -78,7 +78,7 @@ class MakeView
      */
     protected function compileViewStub($nameView)
     {
-        $stub = $this->files->get(__DIR__ . '/../stubs/html_assets/'.$nameView.'.stub');
+        $stub = $this->files->get(config('scaffold.stubPath') . '/html_assets/' . $nameView . '.stub');
 
         if($nameView == 'show'){
             // show.blade.php
