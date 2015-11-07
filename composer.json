@@ -16,7 +16,7 @@
   },
   "autoload": {
     "psr-4": {
-      "DOm1no\\L5scaffold\\": "src/"
+      "DOm1no\\l5scaffold\\": "src/"
     }
   }
 }
