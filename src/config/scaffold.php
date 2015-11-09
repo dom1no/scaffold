@@ -3,7 +3,7 @@
 return [
 
     //Путь к вашим шаблонам. По умолчанию они лежат в vendor/laralib/l5scaffold/src/stubs
-    'stubPath' => './vendor/laralib/l5scaffold/src/stubs',
+    'stubPath' => './vendor/laralib/l5scaffold/src/stubs/',
 
     /*
      * Path for scaffolding controllers.
@@ -18,14 +18,14 @@ return [
      * If 'prefix' is used when scaffolding
      * that folder will be added to these paths
     */
-    'models_path' => './app/Model/Base',
+    'models_path' => './app/Model/Base/',
 
     /*
      * Path for scaffolding models.
      * If 'prefix' is used when scaffolding
      * that folder will be added to these paths
     */
-    'models_command_path' => 'Model/Base',
+    'models_command_path' => 'Model/Base/',
 
 
     /*
