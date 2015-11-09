@@ -26,8 +26,8 @@ class MakeLayout {
 
     protected function start()
     {
-        $this->putViewLayout('Layout', config('scaffold.stubPath') . 'html_assets/layout.stub', 'layout.blade.php');
-        $this->putViewLayout('Error', config('scaffold.stubPath') . 'html_assets/error.stub', 'error.blade.php');
+        $this->putViewLayout('Layout', 'html_assets/layout.stub', 'layout.blade.php');
+        $this->putViewLayout('Error', 'html_assets/error.stub', 'error.blade.php');
     }
 
 
@@ -38,7 +38,7 @@ class MakeLayout {
     protected function putViewLayout($name, $stub, $file)
     {
         $path_file = $this->getPathResource().$file;
-        $path_stub = config('scaffold.stubPath');
+        $path_stub = config('scaffold.stubPath') . $stub;
 
         if (!$this->files->exists($path_file)){
             $html = $this->files->get($path_stub);
